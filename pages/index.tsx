@@ -1,86 +1,70 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import BillboardCard from '../components/BillboardCard'
 
 const Home: NextPage = () => {
-  return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+	return (
+		<div className="">
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
+			{/* container for large cards */}
+			<div className='space-y-8'>
+				<BillboardCard 
+					backgroundColor='bg-[#1e3932]'
+					title='More sips, more trips'
+					subtitle='Join Starbucks and link your Delta SkyMiles account by 3/31 to earn 200 Stars, 500 miles -or both!'
+					buttonText='Join + Link'
+					buttonLink=''
+					imagePath='/img/home-1.jpg'
+					textColor='text-white'
+					buttonColor='border-white' />
 
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
-            pages/index.tsx
-          </code>
-        </p>
+				<BillboardCard 
+					backgroundColor='bg-[#a0c292]'
+					title='Brighten your day'
+					subtitle='Enjoy a cheery Pink Drink or Dragon Drink Starbucks Refreshers beverage'
+					buttonText='Order now'
+					buttonLink='menu'
+					imagePath='/img/home-2.jpg'
+					imageFirst={true}
+					textColor="text-starbucks"
+					buttonColor='border-starbucks' />
 
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and its API.
-            </p>
-          </a>
+				<BillboardCard 
+					backgroundColor='bg-[#f6bfd9]'
+					title='Uplifting anytime'
+					subtitle='Recarge with a lively Brown Sugar Oatmilk or Toasted Vanilla Oatmilk Shaken Espresso - 140 calories or less in a grande'
+					buttonText='Order now'
+					buttonLink='menu'
+					imagePath='/img/home-3.jpg'
+					imageFirst={false}
+					textColor="text-starbucks"
+					buttonColor='border-starbucks' />
 
-          <a
-            href="https://nextjs.org/learn"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
+				<BillboardCard 
+					backgroundColor='bg-[#fff4d4]'
+					title='Hearty on the go'
+					subtitle='Grab a deliciously filling Double-Smoked Bacon, Cheddar & Egg Sandwich or Bacon & Gruyere Egg Bites'
+					buttonText='Order now'
+					buttonLink='menu'
+					imagePath='/img/home-4.jpg'
+					imageFirst={true}
+					textColor="text-starbucks"
+					buttonColor='border-starbucks' />
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-        <a
-          className="flex items-center justify-center gap-2"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </a>
-      </footer>
-    </div>
-  )
+				<BillboardCard 
+					backgroundColor='bg-[#d4e9e2]'
+					title='Delivery from our place to yours'
+					subtitle='Keep doing you, we’re on the way. Place your Starbucks order for delivery—now on DoorDash. See the DoorDash app for availability and restrictions.'
+					buttonText='Order now'
+					buttonLink='menu'
+					imagePath='/img/home-5.jpg'
+					imageFirst={false}
+					textColor="text-starbucks"
+					buttonColor='border-starbucks' />
+			</div>
+		</div>
+	)
 }
 
 export default Home

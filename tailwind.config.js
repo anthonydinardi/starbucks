@@ -6,7 +6,19 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: 
+      [
+        'SoDoSans',
+        'Helvetica Neue',
+        'Helvetica',
+        'Arial',
+        'sans-serif'
+      ],
+      colors: {
+        starbucks: '#1e3932'
+      }
+    },
   },
   plugins: [],
 }
