@@ -42,6 +42,9 @@ function Navbar() {
                         <div className='font-bold'>
                             <Link href="/">GIFT CARDS</Link>
                         </div>
+                        <div className='font-bold'>
+                            <Link href="/">MORE</Link>
+                        </div>
                     </div>
                 </div>
                 <div className='md:flex space-x-12 hidden'>
